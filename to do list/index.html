@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="todo-box">
+      <h1>My To-Do List</h1>
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button id="addBtn">Add Task</button>
+      </div>
+      <ul id="taskList">
+        <li>
+          <input type="checkbox" id="task1" onchange="toggleTask(this)">
+          <label for="task1">Complete the project documentation</label>
+          <button class="delete-btn" onclick="deleteTask(this)">×</button>
+        </li>
+        <li>
+          <input type="checkbox" id="task2" onchange="toggleTask(this)">
+          <label for="task2">Review code changes</label>
+          <button class="delete-btn" onclick="deleteTask(this)">×</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
